@@ -81,12 +81,12 @@ const TodoApp = ({}) => {
   };
 
   return (
-    <div className={`${displayMode ? "bg-vdb" : "bg-vlgb"} min-h-screen  `}>
+    <div
+      className={`${displayMode ? "bg-vdb" : "bg-vlgb"} min-h-screen  m-0 p-0`}
+    >
       {/* background header image */}
       <Background displayMode={displayMode} />
-      <div
-        className={`flex flex-col items-center h-screen absolute w-full top-20 `}
-      >
+      <div className={`flex flex-col items-center  absolute w-full top-20 `}>
         {/* todo text*/}
         <div
           className={`font-body flex justify-between w-1/3 ${
